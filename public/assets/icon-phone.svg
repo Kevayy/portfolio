@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="clip-icon-phone">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="icon-phone" clip-path="url(#clip-icon-phone)">
+    <g id="Group_70" data-name="Group 70" transform="translate(-1 -1)">
+      <path id="Path_23" data-name="Path 23" d="M6.425,1.13H19.276A6.43,6.43,0,0,1,25.7,7.555V37.54a6.43,6.43,0,0,1-6.425,6.425H6.425A6.43,6.43,0,0,1,0,37.54V7.555A6.43,6.43,0,0,1,6.425,1.13Zm6.425,36.41A2.142,2.142,0,1,0,10.709,35.4,2.148,2.148,0,0,0,12.851,37.54Z" transform="translate(12.851 3.154)" fill="#463492"/>
+      <path id="Path_24" data-name="Path 24" d="M0,0H51.4V51.4H0Z" fill="none"/>
+    </g>
+  </g>
+</svg>
