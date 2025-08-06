@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/assets/KVB_Logo_Beeldmerk.svg" />
+        <link rel="icon" type="image/x-icon" href="/assets/KVB_Logo_Beeldmerk.svg" />
       </head>
       <body>
         {children}

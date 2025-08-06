@@ -1,18 +1,15 @@
 'use client';
 
-import Image from 'next/image';
-
 export default function Navbar() {
     return (
         <nav className="fixed top-0 left-0 w-full text-white px-24 py-6 z-50 shadow-md">
             <div className="flex justify-between items-center">
                 <div className="flex items-center space-x-4">
-                    <Image
+                    <img
                         src="/assets/KVB_Logo_Diapositief.svg"
-                        alt="Logo"
+                        alt="Kevin van Bommel Logo"
                         width={324}
                         height={102}
-                        priority
                     />
                 </div>
                 <ul className='flex space-x-12 items-center text-sm font-medium uppercase'>
