@@ -13,7 +13,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center">
         <div className="flex flex-1 justify-start items-center space-x-2 md:space-x-4">
           <Image
-            src="/assets/KVB_Logo_Diapositief.svg"
+            src="/assets/logo.svg"
             alt="Kevin van Bommel Logo"
             width={180}
             height={56}
