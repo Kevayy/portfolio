@@ -1,3 +1,4 @@
+import { About } from "@/components/About";
 import { Hero } from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <Navbar />
       <div className="pt-32 pb-12 flex flex-col items-center justify-center">
         <Hero />
+        <About />
       </div>
     </div>
   );

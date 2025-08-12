@@ -42,6 +42,9 @@
   --color-blue: #087CBA;
   --color-violet: #463492;
   --color-silver: #B9B9B9
+  --text-*: initial;
+  --text-base: 20px;
+  --text-5xl: 40px;
 }
 
 body {
