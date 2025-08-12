@@ -7,9 +7,13 @@ import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navLink = "relative after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[3px] after:bg-gradient-to-r after:from-violet after:via-blue after:to-green after:transition-all after:duration-300 hover:after:w-full";
 
   return (
-    <nav className="fixed top-0 left-0 w-full text-white px-4 md:px-24 py-4 md:py-6 z-50 shadow-lg bg-black ">
+    <nav   className={cn(
+    "fixed top-0 left-0 w-full text-white px-4 md:px-24 py-4 md:py-6 z-50 shadow-lg bg-black transition-all duration-300",
+    menuOpen && "h-full flex flex-col"
+  )}>
       <div className="flex justify-between items-center">
         <div className="flex flex-1 justify-start items-center space-x-2 md:space-x-4">
           <Image
@@ -47,19 +51,19 @@ export default function Navbar() {
 
         <ul className="hidden md:flex space-x-12 items-center text-base font-semibold uppercase tracking-wide">
           <li>
-            <Link href="#about" className="hover:text-purple-300 transition">
+            <Link href="#about" className={navLink}>
               Over mij
             </Link>
           </li>
           <li>
-            <Link href="#skills" className="hover:text-purple-300 transition">
+            <Link href="#skills" className={navLink}>
               Skills
             </Link>
           </li>
           <li>
             <Link
               href="#education"
-              className="hover:text-purple-300 transition"
+              className={navLink}
             >
               Opleiding
             </Link>
@@ -67,7 +71,7 @@ export default function Navbar() {
           <li>
             <Link
               href="#experience"
-              className="hover:text-purple-300 transition"
+              className={navLink}
             >
               Werkervaring
             </Link>
@@ -75,14 +79,14 @@ export default function Navbar() {
         </ul>
         <Link
           href="#contact"
-          className="hidden md:block ml-12 px-6 py-2 rounded-md text-white font-bold uppercase text-base bg-gradient-to-r from-purple-600 to-blue-500 hover:brightness-110 shadow transition"
+          className="hidden md:block ml-12 px-6 py-2 rounded-[4px] text-white font-bold uppercase text-base bg-linear-90 from-violet via-blue to-blue hover:brightness-110 shadow transition"
         >
           Contact
         </Link>
       </div>
       {menuOpen && (
-        <div className="md:hidden mt-4 bg-gradient-to-br from-purple-900 via-blue-900 to-blue-700 rounded-lg shadow-lg p-4 transition">
-          <ul className="flex flex-col space-y-4 text-lg font-semibold uppercase tracking-wide transition">
+        <div className="md:hidden flex-1 flex flex-col justify-center items-center">
+          <ul className="flex flex-col items-center space-y-8 text-lg font-semibold uppercase tracking-wide transition">
             <li>
               <Link
                 href="#about"
@@ -122,7 +126,7 @@ export default function Navbar() {
             <li>
               <Link
                 href="#contact"
-                className="mt-2 px-6 py-2 rounded-md text-white font-bold uppercase text-base bg-gradient-to-r from-purple-600 to-blue-500 hover:brightness-110 shadow transition"
+                className="mt-2 px-6 py-2 rounded-[4px] text-white font-bold uppercase text-base bg-linear-90 from-violet via-blue to-blue hover:brightness-110 shadow transition"
                 onClick={() => setMenuOpen(false)}
               >
                 Contact
