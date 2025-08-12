@@ -53,7 +53,7 @@ export const About = () => {
                 </div>
 
                 <div className="lg:col-span-5 lg:pl-12 flex flex-col lg:block items-center">
-                    <h3 className="font-extrabold uppercase tracking-wide text-3xl sm:text-4xl md:text-5xl">Hobby's</h3>
+                    <h3 className="font-extrabold uppercase tracking-wide text-3xl sm:text-4xl md:text-5xl">Hobby&apos;s</h3>
 
                     <ul className="flex gap-12 mt-10 space-y-8">
                     <li className=" gap-4">
