@@ -16,14 +16,15 @@ export const Hero = () => {
         </p>
       </div>
       <div className="flex justify-center items-center mb-8 lg:mb-0 lg:ml-32">
-        <Image
-          src="/assets/foto-kevin.png"
-          alt="Hero Image"
-          className="rounded-full shadow-xl border-4"
-          width={384}
-          height={384}
-          priority
-        />
+        <div className="relative w-[250px] h-[250px] lg:w-[384px] lg:h-[384px]">
+          <Image
+            src="/assets/foto-kevin.png"
+            alt="Hero Image"
+            fill
+            priority
+            className="rounded-full shadow-xl border-4 object-cover"
+          />
+        </div>
       </div>
     </div>
   );
